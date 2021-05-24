@@ -74,9 +74,10 @@
     return q
     }
     }
-console.log("Ex.2", whoIsBigger(2,8))
+    console.log("Ex.2", whoIsBigger(2,8))
 /* Ex.3
-    Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
+    Write a function called "splitMe" which receives a string as a parameter and 
+    returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
    function splitMe(noah){
@@ -84,9 +85,14 @@ console.log("Ex.2", whoIsBigger(2,8))
    }
    console.log("Ex.3",splitMe("I love coding"))
 /* Ex.4
-    Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
+    Write a function called "deleteOne" which receives a string and a boolean as parameters. 
+    If the boolean value is true it should return the string without the first letter, otherwise 
+    it should remove the last one from it.
 */
-
+     function deleteOne(name,bool){
+     return bool==true ? name.substr(1) : name.slice(0, -1)
+     }
+     console.log("Ex.4",deleteOne("skarishma",true))
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
