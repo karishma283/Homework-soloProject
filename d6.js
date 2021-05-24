@@ -135,13 +135,17 @@
 /* Ex.11
    Write a function called "deleteProp" which receives an object and a string as parameters,
     and returns the given object after deleting its property named as the given string.
-*/
+*/   
   
 
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
 
+    function olderMovie(film){
+    for(let i=0; i<film.length;i++){
+    if(film[i]["Year"]<2000){
+    console.log("Ex.12",film[i]) }  }  }
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
@@ -188,7 +192,8 @@
 */
 
 /* Ex.22 
-  Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
+  Create a function called "tree" which receives a number as a 
+  parameter and builds an "*" tree with the given height.
   Example: 
   tree(3)
     *  
@@ -197,10 +202,11 @@
 */
 
 /* Ex.23
-  Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
+  Create a function called "isItPrime" that receives a 
+  number as a parameter and returns true if the given number is a prime number.
 */
 
-/* This movies array is used throughout the exercises. Please don't change it :)  
+/* This movies array is used throughout the exercises. Please don't change it :)  */
 const movies = [
     {
       Title: "The Lord of the Rings: The Fellowship of the Ring",
@@ -315,7 +321,7 @@ const movies = [
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ]
-  */
+  
 
 
   
