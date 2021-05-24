@@ -23,13 +23,20 @@ console.log("Ex.A",test)
 let sum=10+20
 console.log("Ex.B",sum)
 /* Ex.C 
-    Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
+    Create a variable called "random" and assign to it a random number between 0 and 20 
+    (it should be randomly created at each execution).
 */
 
 /* Ex.D
-    Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
+    Create a variable called "me" and assign to it an object containing
+     the following information: name = your name, surname = your surname, age = your age.
 */
-
+let me={
+    name:"karishma",
+    surname:"shaik",
+    age:24,    
+}
+console.log("Ex.D",me)
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
 */
