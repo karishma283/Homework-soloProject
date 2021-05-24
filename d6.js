@@ -15,44 +15,46 @@
 /* Ex.A
    Create a variable called "test" and assign a string to it.
 */
-let test="Karishma"
-console.log("Ex.A",test)
+   let test="Karishma"
+   console.log("Ex.A",test)
 /* Ex.B
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
 */
-let sum=10+20
-console.log("Ex.B",sum)
+   let sum=10+20
+   console.log("Ex.B",sum)
 /* Ex.C 
     Create a variable called "random" and assign to it a random number between 0 and 20 
     (it should be randomly created at each execution).
 */
-
+    let random = Math.floor(Math.random() * 20);
+    console.log("Ex.C",random)
 /* Ex.D
     Create a variable called "me" and assign to it an object containing
      the following information: name = your name, surname = your surname, age = your age.
 */
-let me={
+     let me={
     name:"karishma",
     surname:"shaik",
     age:24,    
-}
-console.log("Ex.D",me)
+    }
+    console.log("Ex.D",me)
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
 */
-delete me.age;
-console.log("Ex.E",me)
+   delete me.age;
+   console.log("Ex.E",me)
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
-me.skills = ["javascript","java","C"]
-console.log("Ex.F",me)
+   me.skills = ["javascript","java","C"]
+   console.log("Ex.F",me)
 
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
-me.skills.pop()
-console.log("Ex.G",me)
+   me.skills.pop()
+   console.log("Ex.G",me)
+
 // JS Functions
 /* Ex.1
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
@@ -107,7 +109,8 @@ console.log("Ex.G",me)
 // NOTE: movies array is defined at the end of this file!
 
 /* Ex.11
-   Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
+   Write a function called "deleteProp" which receives an object and a string as parameters,
+    and returns the given object after deleting its property named as the given string.
 */
 
 /* Ex.12 
@@ -288,3 +291,6 @@ const movies = [
     },
   ]
   */
+
+
+  
