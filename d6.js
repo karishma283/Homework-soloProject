@@ -142,42 +142,68 @@
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
 
-    function olderMovie(film){
-    for(let i=0; i<film.length;i++){
-    if(film[i]["Year"]<2000){
-    console.log("Ex.12",film[i]) }  }  }
+    function olderMovie(movies){
+    for(let i=0; i<movies.length;i++){
+    if(movies[i]["Year"]<2000){
+    console.log("Ex.12",movies[i]) }  }  }
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies 
     contained in the array provided at the end of this file.
 */
-     function countMovies(noOfMovies){
-     return noOfMovies.length 
-     }
+  
+     
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided 
     in the array at the end of the file.
 */   function onlyTheTitles(movies){
-     for(let i=0; i<movies.length;i++){
-     console.log("Ex.14",movies[i].Title)
-     }
-     }
+  for(let i=0; i<movies.length;i++){
+    console.log("Ex.14",movies[i].Title) }
+  }
 
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
-
+function onlyInThisMillennium(movies){
+  for(let i=0; i<movies.length;i++){
+    if(movies[i]["Year"]>=1999){
+      console.log("Ex.15",movies[i])
+    }
+    }
+    }
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
 */
-
+function getMovieById(mID){
+  for(let i=0; i<movies.length;i++){
+    if(movies[i]["mID"]>=mID){
+      console.log("Ex.16", movies[i])
+    }
+  }
+}
 /* Ex.17
-    Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
+    Write a function called "sumAllTheYears" which returns the sum of all
+     the years in which the movies provided have been produced.
 */
-
+function sumAllTheYears(movies){
+  let sum=0
+  for(let i=0; i<movies.length;i++){
+    let year= movies[i]["Year"]
+    sum += year
+  }
+  return console.log("Ex.17",sum)
+}
+}
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
+function searchByTitle(movies,title){
+  for(let i=0; i<movies.length;i++){
+    if(movies[i]["Title"].includes(title)){
+      console.log("Ex.18", movies[i])
+    }
+  }
 
+}
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
     this object should contain an array called "match", made by all the movies which contain the given string in the title,
@@ -329,7 +355,12 @@ const movies = [
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ]
-  
-
+  lderMovie(movies)
+console.log(countMovies(movies))
+onlyTheTitles(movies)
+onlyInThisMillennium(movies)
+getMovieById("t2395427")
+sumAllTheYears(movies)
+searchByTitle(movies,"Lord")
 
   
