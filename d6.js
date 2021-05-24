@@ -147,9 +147,12 @@
     if(film[i]["Year"]<2000){
     console.log("Ex.12",film[i]) }  }  }
 /* Ex.13
-    Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
+    Write a function called "countMovies" which returns the number of movies 
+    contained in the array provided at the end of this file.
 */
-
+     function countMovies(noOfMovies){
+     return noOfMovies.length 
+     }
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
 */
