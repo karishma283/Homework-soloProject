@@ -192,7 +192,7 @@ function sumAllTheYears(movies){
   }
   return console.log("Ex.17",sum)
 }
-}
+
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
@@ -202,6 +202,7 @@ function searchByTitle(movies,title){
       console.log("Ex.18", movies[i])
     }
   }
+
 
 }
 /* Ex.19
