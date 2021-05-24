@@ -154,8 +154,13 @@
      return noOfMovies.length 
      }
 /* Ex.14
-    Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
-*/
+    Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided 
+    in the array at the end of the file.
+*/   function onlyTheTitles(movies){
+     for(let i=0; i<movies.length;i++){
+     console.log("Ex.14",movies[i].Title)
+     }
+     }
 
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
