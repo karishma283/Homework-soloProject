@@ -45,7 +45,7 @@ console.log("Ex.E",me)
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
-me.skills = "javascript";
+me.skills = ["javascript","java","C"]
 console.log("Ex.F",me)
 
 /* Ex.G 
