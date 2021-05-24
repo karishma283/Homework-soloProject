@@ -105,7 +105,11 @@
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
-
+   function whatDayIsIt(){
+   let r = new Date();
+   return r.getDay()
+   }
+   console.log("Ex.7",whatDayIsIt())
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
@@ -132,6 +136,7 @@
    Write a function called "deleteProp" which receives an object and a string as parameters,
     and returns the given object after deleting its property named as the given string.
 */
+  
 
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
